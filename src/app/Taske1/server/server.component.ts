@@ -11,6 +11,13 @@ export class ServerComponent {
   serverId:number = 2025;
   serverStatus: string = 'Rody';
   allowAddServer:boolean=false;
+
+  constructor(){
+    setTimeout(() => {
+      this.allowAddServer=true;
+    }, 3000);
+  }
+
   getServerStatus()
   {
     return this.serverStatus;

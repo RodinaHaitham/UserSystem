@@ -1,13 +1,15 @@
 <div class="containor">
     <div class="row">
         <div class="col-md-12">
-            <button class="btn btn-primary" onclick="console.log('Add Server button clicked')">owAddServer">
+            <button class="btn btn-primary mt-4"
+            [disabled]="!allowAddServer"
+            >
                 AddServer
             </button>  
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mt-4">
             <p>Server whith id {{serverId}} is {{serverStatus}}</p>
             <p>Server whith id {{serverId}} is {{getServerStatus()}}</p>
         </div>
